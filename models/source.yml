@@ -1,0 +1,8 @@
+
+        # models/source.yml
+        version: 2
+        sources:
+          - name: fivetran_metadata
+            schema: public
+            tables:
+              - name: jampack_sample_data

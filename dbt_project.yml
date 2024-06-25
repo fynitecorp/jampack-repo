@@ -1,12 +1,17 @@
 
-        name: dbt_transformation
-        version: '1.0'
-        config-version: 2
-        profile: dbt_transformation
-        model-paths: ['models']
-        analysis-paths: ['analyses']
-        test-paths: ['tests']
-        seed-paths: ['seeds']
-        snapshot-paths: ['snapshots']
-        target-path: target
-        clean-targets: ['target', 'dbt_modules']
+# dbt_project.yml
+name: dbt_transformation
+version: '1.0'
+config-version: 2
+profile: dbt_transformation
+
+model-paths: ['models']
+analysis-paths: ['analyses']
+test-paths: ['tests']
+seed-paths: ['seeds']
+snapshot-paths: ['snapshots']
+target-path: target
+clean-targets: ['target', 'dbt_modules']
+
+vars:
+  condition: "cost_tickets IS NOT NULL AND cost_tickets != 0"

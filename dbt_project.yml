@@ -13,4 +13,4 @@ target-path: target
 clean-targets: ['target', 'dbt_modules']
 
 vars:
-  condition: "['cost_tickets'] != 0"
+  condition: "cost_tickets != 0"

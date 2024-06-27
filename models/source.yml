@@ -1,9 +1,7 @@
-
-# models/source.yml
 version: 2
 sources:
-  - name: sample20_fivetran_metadata
+- name: sample20_fivetran_metadata
     database: dev
     schema: sample20_fivetran_metadata
     tables:
-      - name: jampack_sample_data
+    - name: jampack_sample_data
